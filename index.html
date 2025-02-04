@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea House Landing Website</title>
+    <!-- Daisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- google font cdn -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,12 +22,40 @@
               colors: {
                 clifford: '#da373d',
               }
+              
             }
           }
         }
     </script>
+    <style>
+      .font-manrope {
+      font-family: "Manrope", serif;
+  
+      font-style: normal;
+      }
+    </style>
 </head>
-<body>
+<body class="font-manrope">
+    <!-- DAISY UI NAVBAR AND HAMBURGER MENU 15-4  -->
+    
+      <div class="flex-none">
+        <button class="btn btn-square btn-ghost">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            class="inline-block h-5 w-5 stroke-current">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+      
+    
+
     <!-- Main section -->
      <main class="max-w-screen-xl px-16 lg:px-28">
       <!-- header section -->
@@ -33,6 +64,7 @@
          <div>
           <h1 class="text-5xl md:text-7xl">It's good<br> 
           tea time at The<br>Tea House</h1>
+          <h1 class="text-3xl font-bold animate-bounce">My Heading</h1>
           <p class="text-gray-500 w-3/4">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
           <button class="bg-gradient-to-r from-orange-500 to-red-400 px-5 py-3 text-white font-bold rounded-lg">Explore More<i class="fa-solid fa-arrow-right text-xl -rotate-45"></i></button>
          </div>
@@ -203,5 +235,94 @@
          </section>
 
      </main>
+      <!-- Footer Section -->
+       <footer class="bg-orange-100 text-gray-700 py-10 px-4 md:px-16">
+        <div class="w-9/12 mx-auto"></div>
+        <!-- logo -->
+         <div class="mb-8 flex justify-between">
+          <img class="mb-8" src="./images/cup.png" alt="">
+          <div class="flex items-center gap-4 lg:gap-10">
+            <h4>Ready To Started?</h4>
+            <button class="bg-gradient-to-r from-orange-500 to-red-400 px-5 py-3 text-white font-bold rounded-lg">Get Started<i class="fa-solid fa-arrow-right text-xl -rotate-45"></i></button>
+          </div>
+         </div>
+
+         <!-- Links -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <!-- first column -->
+            <div>
+              <h3 class="font-semibold text-lg mb-3">Qucik Links</h3>
+              <ul>
+                <li class="mb-4">
+                  <a class="hover:text-red-400" href="#">Home</a>
+                </li>
+                <li class="mb-4">
+                  <a class="hover:text-red-400" href="#">About Us</a>
+                </li>
+                <li class="mb-4">
+                  <a class="hover:text-red-400" href="#">insurance</a>
+                </li>
+                <li class="mb-4">
+                  <a class="hover:text-red-400" href="#">Privacy Policy</a>
+                </li>
+              </ul>
+             </div>
+            <!-- Second column -->
+            <div>
+              <h3 class="font-semibold text-lg mb-3">Our service</h3>
+              <ul>
+                <li class="mb-4">
+                  <a class="hover:text-red-400" href="#">LIfe Insurance</a>
+                </li>
+                <li class="mb-4">
+                  <a class="hover:text-red-400" href="#">Car Insurance</a>
+                </li>
+                <li class="mb-4">
+                  <a class="hover:text-red-400" href="#">Health Insurance</a>
+                </li>
+                <li class="mb-4">
+                  <a class="hover:text-red-400" href="#">House Insurance</a>
+                </li>
+              </ul>
+             </div>
+
+
+             
+            <!-- Third column -->
+             <div>
+              <h3 class="font-semibold text-lg mb-3">Help</h3>
+              <ul>
+                <li class="mb-4">
+                  <a class="hover:text-red-400" href="#">FAQs</a>
+                </li>
+                <li class="mb-4">
+                  <a class="hover:text-red-400" href="#">Contact Us</a>
+                </li>
+                
+              </ul>
+             </div>
+
+             <!-- Fourth Column -->
+              <div>
+                <h3 class="font-bold text-2xl mb-4">Subscribe to Our newsletter</h3>
+                <div class="flex flex-col space-y-3">
+                  <div>
+                    <input type="text" placeholder="Your Email" class="bg-transparent border-b-2 border-black w-4/6 md:w-5/6"><i class="fa-solid fa-chevron-right  w-7 h-7 rounded-full inline-flex
+                    justify-center items-center bg-orange-600"></i>
+                  </div>
+                  <div class="pt-4 flex justify-between w-2/6">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                  </div>
+
+                </div>
+              </div>
+          </div>
+          <div class="text-center pt-4 mt-4">
+            <p class="text-sm text-gray-600">© 2027 UIDesign.to - All rights reserved.</p>
+
+          </div>
+       </footer>
 </body>
-</html>
+</html> 
